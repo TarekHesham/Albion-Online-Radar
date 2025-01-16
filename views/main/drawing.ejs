@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Albion Radar</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="/style/drawing.css" />
+  </head>
+  <body>
+    <div id="canvasContainer">
+      <canvas class="ttcan" id="mapCanvas" width="500" height="500"></canvas>
+      <canvas class="ttcan" id="gridCanvas" width="500" height="500"></canvas>
+      <canvas class="ttcan" id="drawCanvas" width="500" height="500"></canvas>
+      <canvas class="ttcan" id="flashCanvas" width="500" height="500"></canvas>
+      <canvas
+        class="ttcan"
+        id="ourPlayerCanvas"
+        width="500"
+        height="500"
+      ></canvas>
+      <canvas id="thirdCanvas" width="500" height="500"></canvas>
+      <button class="button" id="button">Clear</button>
+      <button class="button" id="logEnemiesList">Log Enemies List</button>
+      <button class="button" id="launchItems" onclick="window.open('/items');">
+        Open Items Window
+      </button>
+    </div>
+
+    <!-- Load jQuery and SignalR -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/3.1.10/signalr.min.js"></script>
+
+    <!-- Load custom scripts -->
+    <script src="/scripts/Handlers/HarvestablesHandler.js"></script>
+    <script src="/scripts/Handlers/MobsHandler.js"></script>
+    <script src="/scripts/Handlers/ChestsHandler.js"></script>
+    <script src="/scripts/Handlers/DungeonsHandler.js"></script>
+    <script src="/scripts/Handlers/Map.js"></script>
+    <script src="/scripts/Handlers/MobsInfo.js"></script>
+    <script src="/scripts/Handlers/ItemsInfo.js"></script>
+    <script src="/scripts/Handlers/FactionFlagInfo.js"></script>
+    <script src="/scripts/utils/DrawingUtils.js"></script>
+
+    <!-- Load main script -->
+    <script type="module" src="/scripts/utils/utils.js"></script>
+
+    <!-- Reload the page when the "mobUpdated" event is triggered -->
+    <script defer>
+      window.addEventListener("storage", function (event) {
+        if (event.key === "mobUpdated") {
+          localStorage.removeItem("mobUpdated");
+          location.reload();
+        }
+      });
+    </script>
+  </body>
+</html>

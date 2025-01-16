@@ -1,0 +1,33 @@
+body {
+  background-color: transparent;
+  overflow: hidden;
+}
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+/* Position the canvases, with the topCanvas above the gridCanvas */
+.ttcan {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px;
+}
+
+#gridCanvas {
+  border: 2px solid grey;
+}
+
+#canvasContainer {
+  position: relative;
+}
+
+#thirdCanvas {
+  position: absolute;
+  top: 520px;
+  margin: 10px;
+  bottom: 0;
+  left: 0;
+  border: 2px solid grey;
+  display: none;
+}

@@ -1,0 +1,224 @@
+<div class="container px-6 mx-auto grid">
+  <div class="grid gap-6 mb-8 md:grid-cols-1 xl:grid-cols-1">
+    <div
+      class="mt-4 flex items-start p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800"
+    >
+      <div>
+        <h2
+          id="enemies-text"
+          class="text-4xl font-semibold text-gray-600 dark:text-gray-300"
+        >
+          Enemies
+        </h2>
+      </div>
+    </div>
+    <div
+      class="flex items-start p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800"
+    >
+      <div>
+        <h4
+          id="classic-enemies-text"
+          class="mb-4 text-2xl font-semibold text-gray-600 dark:text-gray-300"
+        >
+          Classic Enemies
+        </h4>
+        <label class="flex items-center">
+          <input
+            type="checkbox"
+            id="settingAllEnemies"
+            class="h-5 w-5 text-indigo-600 border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+          />
+          <span id="all-text" class="dark:text-white ml-2">All</span>
+        </label>
+        <label class="flex items-center">
+          <input
+            disabled
+            type="checkbox"
+            id="settingNormalEnemy"
+            class="h-5 w-5 text-indigo-600 border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+          />
+          <span id="normal-text" class="dark:text-white ml-2">Normal</span>
+        </label>
+        <label class="flex items-center">
+          <input
+            disabled
+            type="checkbox"
+            id="settingMediumEnemy"
+            class="h-5 w-5 text-indigo-600 border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+          />
+          <span id="medium-text" class="dark:text-white ml-2">Medium</span>
+        </label>
+        <label class="flex items-center">
+          <input
+            disabled
+            type="checkbox"
+            id="settingEnchantedEnemy"
+            class="h-5 w-5 text-indigo-600 border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+          />
+          <span id="enchanted-text" class="dark:text-white ml-2"
+            >Enchanted</span
+          >
+        </label>
+        <label class="flex items-center">
+          <input
+            disabled
+            type="checkbox"
+            id="settingMiniBossEnemy"
+            class="h-5 w-5 text-indigo-600 border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+          />
+          <span id="mini-boss-text" class="dark:text-white ml-2"
+            >Mini-Boss</span
+          >
+        </label>
+        <label class="flex items-center">
+          <input
+            disabled
+            type="checkbox"
+            id="settingBossEnemy"
+            class="h-5 w-5 text-indigo-600 border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+          />
+          <span id="boss-text" class="dark:text-white ml-2">Boss</span>
+        </label>
+        <br />
+        <label class="flex items-center">
+          <input
+            type="checkbox"
+            id="settingShowMinimumHealthEnemies"
+            class="h-5 w-5 text-indigo-600 border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+          />
+          <span id="show-minimum-text" class="dark:text-white ml-2"
+            >Show enemies with minimum hp</span
+          >
+        </label>
+        <label class="flex items-center">
+          <input
+            type="text"
+            id="settingTextMinimumHealthEnemies"
+            class="h-5 w-15 text-indigo-600 border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+          />
+          <span id="minimum-text" class="dark:text-white ml-2">Minimum hp</span>
+        </label>
+        <br />
+        <label class="flex items-center">
+          <input
+            type="checkbox"
+            id="settingShowUnmanagedEnemies"
+            class="h-5 w-5 text-indigo-600 border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+          />
+          <span id="show-unmanaged-text" class="dark:text-white ml-2"
+            >Show enemies with unmanaged ids?</span
+          >
+        </label>
+      </div>
+    </div>
+
+    <div
+      class="flex items-start p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800"
+    >
+      <div>
+        <h4
+          id="mists-text"
+          class="mb-4 text-2xl font-semibold text-gray-600 dark:text-gray-300"
+        >
+          Mists
+        </h4>
+        <label class="flex items-center">
+          <input
+            type="checkbox"
+            id="settingBossCrystalSpider"
+            class="h-5 w-5 text-indigo-600 border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+          />
+          <span class="dark:text-white ml-2">Crystal Spider</span>
+        </label>
+        <label class="flex items-center">
+          <input
+            type="checkbox"
+            id="settingBossFairyDragon"
+            class="h-5 w-5 text-indigo-600 border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+          />
+          <span class="dark:text-white ml-2">Fairy Dragon</span>
+        </label>
+        <label class="flex items-center">
+          <input
+            type="checkbox"
+            id="settingBossVeilWeaver"
+            class="h-5 w-5 text-indigo-600 border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+          />
+          <span class="dark:text-white ml-2">Veil Weaver</span>
+        </label>
+        <label class="flex items-center">
+          <input
+            type="checkbox"
+            id="settingBossGriffin"
+            class="h-5 w-5 text-indigo-600 border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+          />
+          <span class="dark:text-white ml-2">Grifin</span>
+        </label>
+      </div>
+    </div>
+    <div
+      class="flex items-start p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800"
+    >
+      <div>
+        <h4
+          id="other-text"
+          class="mb-4 text-2xl font-semibold text-gray-600 dark:text-gray-300"
+        >
+          Other
+        </h4>
+        <label class="flex items-center">
+          <input
+            type="checkbox"
+            id="settingAvaloneDrones"
+            class="h-5 w-5 text-indigo-600 border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+          />
+          <span id="avalone-drones-text" class="dark:text-white ml-2"
+            >Avalone Drones</span
+          >
+        </label>
+        <label class="flex items-center">
+          <input
+            type="checkbox"
+            id="settingShowEventEnemies"
+            class="h-5 w-5 text-indigo-600 border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+          />
+          <span id="event-text" class="dark:text-white ml-2"
+            >Event enemies</span
+          >
+        </label>
+      </div>
+    </div>
+
+    <div
+      class="flex items-start p-4 bg-white rounded-lg shadow-xs dark:bg-gray-800"
+    >
+      <div>
+        <h4
+          id="debug-text"
+          class="mb-4 text-2xl font-semibold text-gray-600 dark:text-gray-300"
+        >
+          Debug
+        </h4>
+        <label class="flex items-center">
+          <input
+            type="checkbox"
+            id="settingEnemiesHP"
+            class="h-5 w-5 text-indigo-600 border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+          />
+          <span id="health-text" class="dark:text-white ml-2">Show Hp</span>
+        </label>
+
+        <label class="flex items-center">
+          <input
+            type="checkbox"
+            id="settingEnemiesID"
+            class="h-5 w-5 text-indigo-600 border-gray-300 rounded-md focus:ring-indigo-500 focus:border-indigo-500"
+          />
+          <span id="id-text" class="dark:text-white ml-2">Show ID</span>
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="/scripts/enemie_handler.js" defer></script>
